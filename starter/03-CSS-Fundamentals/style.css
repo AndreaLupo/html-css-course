@@ -133,3 +133,37 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.author-text {
+  font-size: 20px;
+}
+
+p,
+li {
+  font-style: italic;
+  font-size: 22px;
+}
+
+/** ========
+resolving conflicts
+*/
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+} */

@@ -19,6 +19,13 @@ li {
 }
  */
 
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
 .main-header {
   background-color: #f7f7f7;
   /* padding: 20px;
@@ -26,6 +33,7 @@ li {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 nav {
@@ -45,6 +53,7 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
+  width: 500px;
 }
 
 h1,
@@ -209,3 +218,10 @@ resolving conflicts
 footer p {
   color: green;
 } */
+
+.post-image {
+  width: 100%;
+  /* must be specified to autofit the height - necessary only because it is already set 
+  in the html. If it was not set, it won't be necessary */
+  height: auto;
+}

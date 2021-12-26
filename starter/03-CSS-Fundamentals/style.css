@@ -1,3 +1,4 @@
+/* list selector - apply this rule to all this selectors */
 h1,
 h2,
 h3,
@@ -39,6 +40,32 @@ li {
   font-size: 20px;
 }
 
+/* apply this rule to the paragraph inside a footer element */
+/* 
 footer p {
   font-size: 16px;
+}
+*/
+
+/* article header p {
+  font-size: 16px;
+} */
+
+/* get elements with this id */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
 }

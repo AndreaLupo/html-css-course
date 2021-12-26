@@ -109,3 +109,27 @@ first occurence of a p element inside an article */
 article p:first-child {
   color: red;
 }
+
+/* =============
+hyperlinks 
+*/
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* not used */
+}
+
+/* When the mouse is hover the link */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}

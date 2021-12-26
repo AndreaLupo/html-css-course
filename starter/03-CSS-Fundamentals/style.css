@@ -1,5 +1,9 @@
+body {
+  font-family: sans-serif;
+  color: #444;
+}
 /* list selector - apply this rule to all this selectors */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -8,6 +12,7 @@ li {
   font-family: sans-serif;
   color: #444;
 }
+ */
 
 h1,
 h2,

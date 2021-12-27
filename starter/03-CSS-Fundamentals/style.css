@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* PAGE SECTION */
 body {
   font-family: sans-serif;
   color: #444;
@@ -33,7 +33,7 @@ li {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 nav {
@@ -56,6 +56,7 @@ aside {
   width: 500px;
 }
 
+/* smaller elements */
 h1,
 h2,
 h3 {
@@ -224,4 +225,14 @@ footer p {
   /* must be specified to autofit the height - necessary only because it is already set 
   in the html. If it was not set, it won't be necessary */
   height: auto;
+}
+
+/* margin on a tags are applied only on left and right (withouth display block). 
+When display: block is added, the element is rendered as block, it occupies all the parent's
+width and margin/pading are applied.  */
+nav a:link {
+  background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block;
 }

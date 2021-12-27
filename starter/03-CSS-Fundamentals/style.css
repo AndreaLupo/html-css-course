@@ -231,8 +231,16 @@ footer p {
 When display: block is added, the element is rendered as block, it occupies all the parent's
 width and margin/pading are applied.  */
 nav a:link {
-  background-color: orangered;
+  /* background-color: orangered;
   margin: 20px;
   padding: 20px;
-  display: block;
+  display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }

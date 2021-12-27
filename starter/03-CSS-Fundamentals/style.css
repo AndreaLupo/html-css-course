@@ -6,6 +6,7 @@
 body {
   font-family: sans-serif;
   color: #444;
+  position: relative;
 }
 /* list selector - apply this rule to all this selectors */
 /* h1,
@@ -24,6 +25,7 @@ li {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+  /* position: relative; */
 }
 
 .main-header {
@@ -243,4 +245,16 @@ nav a:link {
 
 nav a:link:last-child {
   margin-right: 0;
+}
+
+button {
+  padding: 20px;
+  cursor: pointer;
+  font-size: 22px;
+
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  bottom: 50px;
+  right: 50px;
 }

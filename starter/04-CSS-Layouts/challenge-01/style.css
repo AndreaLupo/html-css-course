@@ -53,6 +53,7 @@ ul {
   color: #777;
   margin-bottom: 20px;
   float: right;
+  margin-top: 8px;
 }
 
 .more-info:link,
@@ -93,7 +94,7 @@ ul {
 .detail-title {
   text-transform: uppercase;
   font-size: 16px;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .product-list {

@@ -1,0 +1,163 @@
+/* global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.product {
+  border: 4px solid black;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+}
+
+ul {
+  margin-left: 30px;
+}
+
+.product-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+  background-color: #f7f7f7;
+  padding: 15px 0;
+  grid-column: 1 / -1;
+  /* position: relative; */
+}
+
+.price-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 24px;
+}
+
+.free-shipping {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #777;
+  float: right;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  /* margin-bottom: 30px; */
+  display: inline-block;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+/* button */
+.add-button {
+  color: white;
+  width: 100%;
+  background-color: black;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  padding: 15px 0;
+  grid-column: 1 / -1;
+}
+
+.add-button:hover {
+  color: black;
+  background-color: white;
+  border-top: 2px solid black;
+}
+
+/* set product-heading and product-details equally large in the container */
+.product-heading {
+  flex: 1;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.detail-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-list {
+  list-style: square;
+}
+
+.product-list li {
+  margin-bottom: 10px;
+}
+
+.color-choose-list {
+  margin: 30px 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.sale {
+  position: absolute;
+  content: "sale";
+  font-size: 12px;
+  color: #f7f7f7;
+  top: -15px;
+  left: -40px;
+  background-color: #c90000;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  /* space between letters of the content */
+  letter-spacing: 2px;
+}
+
+.color-choose {
+  /* can't be inline or height and width won't work */
+  width: 25px;
+  height: 25px;
+}
+
+.color-choose.background-black {
+  background-color: #040404;
+}
+
+.color-choose.background-bluette {
+  background-color: #3c3a8b;
+}
+
+.color-choose.background-red {
+  background-color: #c90000;
+}
+
+.color-choose.background-beige {
+  background-color: #aaa482;
+}
+
+.color-choose.background-green {
+  background-color: #5bd351;
+}
+
+.color-choose.background-brown {
+  background-color: #75482ae1;
+}
+
+.clearfix {
+  clear: both;
+}

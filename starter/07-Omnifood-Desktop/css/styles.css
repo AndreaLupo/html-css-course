@@ -7,10 +7,14 @@
 
   FONT WEIGHTS:
   Default: 400
+  Medium: 500
+  Semi-bold: 600
+  Bold: 700
 
   LINE HEIGHTS:
   Default: 1
-
+  1.05
+  Paragraph default: 1.6
 
 
     
@@ -26,6 +30,7 @@
 
 
   === BORDER RADIUS =====
+  default: 9px
 
   ==== WHITESPACE ===== 
     SPACING SYSTEM (px)
@@ -53,21 +58,9 @@ body {
   color: #555;
 }
 
-.section-hero {
-  background-color: #fdf2e9;
-  padding: 9.6rem 0;
-}
-
-.hero {
-  /* use max-width to adapt on smaller screen */
-  max-width: 130rem;
-  display: grid;
-  /* center in the viewport */
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 9.6rem;
-}
+/* =================================  */
+/*  GENERAL COMPONENTS                */
+/* =================================  */
 
 .heading-primary {
   font-size: 5.2rem;
@@ -78,12 +71,6 @@ body {
   /* small distance, can also not be set in rem */
   letter-spacing: -0.5px;  
   margin-bottom: 3.2rem;
-}
-
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.3;
-  margin-bottom: 4.8rem;
 }
 
 .btn:link, .btn:visited {
@@ -123,14 +110,111 @@ body {
   box-shadow: inset 0 0 0 4px #fff;
 }
 
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+/* =================================  */
+/*  HEADER                            */
+/* =================================  */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  /* we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* =================================  */
+/*  NAVIGATION                        */
+/* =================================  */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  text-decoration: none;
+  color: #cf711f;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+/* use both selector to have a greater specificity than the one above. */
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* =================================  */
+/*  HERO SECTION                      */
+/* =================================  */
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  /* use max-width to adapt on smaller screen */
+  max-width: 130rem;
+  display: grid;
+  /* center in the viewport */
+  margin: 0 auto;
+
+  /* useful when the page is not full-screen */
+  padding: 0 3.2rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 4.8rem;
+}
+
+
+
 .hero-img {
   /* occupy all the space in the grid */
   width: 100%;
 }
 
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
+
 
 .delivered-meals {
   display: flex;

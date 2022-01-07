@@ -275,6 +275,13 @@ have a visible gap */
   /* hide what overflow out of this container - in this case the top corners of the image,
   which are out of the rounded border */
   overflow: hidden;
+
+  /* change the duration of the hover transition (and others) */
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
 }
 
 .meal-content {
@@ -339,4 +346,30 @@ have a visible gap */
 
 .meal-img {
   width: 100%;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  /* space between elements */
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
 }

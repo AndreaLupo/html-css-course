@@ -80,6 +80,19 @@
     display: grid;
     column-gap: 6.4rem;
     row-gap: 9.6rem;
+
+    /* M-A equivalent to M-B
+    margin-bottom: 9.6rem; */
+  }
+
+  /* M-A equivalent to M-B
+   .grid:last-child {
+    margin-bottom: 0;
+  } */
+
+  /* M-B equivalent to M-A */
+  .grid:not(:last-child) {
+    margin-bottom: 9.6rem;
   }
   
   .grid--2-cols {

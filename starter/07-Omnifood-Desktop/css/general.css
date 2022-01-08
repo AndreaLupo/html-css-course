@@ -28,6 +28,7 @@
   - Tints: 
   #fdf2e9
   #fae5d3
+  #eb984e
   - Shades:
   - Accents:
   - Greys:
@@ -35,6 +36,7 @@
   #6f6f6f (lightest grey allowed on #fdf2e9)
 
   ==== SHADOWS ======
+  0 2.4rem 4.8rem rgba(0,0,0, 0.075);
 
 
   === BORDER RADIUS =====
@@ -152,7 +154,7 @@
   
   
   
-  .btn:link, .btn:visited {
+  .btn, .btn:link, .btn:visited {
     display: inline-block;
     font-size: 2rem;
     font-weight: 600;
@@ -160,6 +162,10 @@
   
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
+
+    /* only necessary for .btn */
+    border: none;
+    cursor: pointer;
   
 /*     transition: background-color 0.3s;*/    
     transition: all 0.3s;
@@ -227,6 +233,12 @@
     color: #e67e22;
   }
 
+  *:focus {
+    outline: none;
+   /*  outline: 4px dotted #e67e22;
+    outline-offset: 8px; */
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.486);
+  }
 
   /* SETTING CLASSES */
 

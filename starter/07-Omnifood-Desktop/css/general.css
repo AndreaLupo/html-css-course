@@ -20,7 +20,7 @@
   Small: 1.05
   Medium: 1.2
   Paragraph default: 1.6
-
+  Large: 1.8
 
     
   ===== COLORS =========
@@ -60,6 +60,8 @@
     /* 10px / 16px = 0.625 = 62.5% */
     /* Percentage of user's browser font-size setting */
     font-size: 62.5%;
+
+    overflow-x: hidden;
   }
   
   body {
@@ -67,6 +69,10 @@
     line-height: 1;
     font-weight: 400;
     color: #555;
+
+    /* everything that overflow on the x axis must be hidden. Useful for the starting
+    status of the menu on navigation. */
+    overflow-x: hidden;
   }
   
   /* =================================  */
@@ -230,6 +236,7 @@
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    line-height: 1.2;
   }
   
   .list-icon {

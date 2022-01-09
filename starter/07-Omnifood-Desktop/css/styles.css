@@ -11,6 +11,8 @@
   /* we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
+
+  position: relative;
 }
 
 .logo {
@@ -59,7 +61,34 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+  color: #333;
 }
+
+/* mobile */
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  /* for normal width, it has to be hidden */
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 
 /* =================================  */
 /*  HERO SECTION                      */
